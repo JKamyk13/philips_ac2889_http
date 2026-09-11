@@ -23,6 +23,52 @@ Other Philips air purifier models may work with `py-air-control`, but they have 
 
 ## Installation
 
+### HACS
+
+This integration can be installed through **HACS** as a custom repository.
+
+#### 1. Add the repository to HACS
+
+Open **HACS → Integrations** and click the **three-dot menu** in the top-right corner.
+
+Select **Custom repositories**.
+
+Add the following repository:
+
+```text
+https://github.com/JKamyk13/philips_ac2889_http
+```
+
+Set the category to:
+
+```text
+Integration
+```
+
+Then click **Add**.
+
+#### 2. Install the integration
+
+After adding the repository, open it in HACS and click **Download**.
+
+You can also use the button below to open the repository directly in HACS:
+
+[![Open your Home Assistant instance and show the repository](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=JKamyk13&repository=philips_ac2889_http)
+
+#### 3. Restart Home Assistant
+
+After the installation is complete, restart Home Assistant.
+
+Then go to:
+
+**Settings → Devices & services → Add Integration**
+
+Search for:
+
+**Philips AC2889 HTTP**
+
+Select the integration and follow the configuration steps.
+
 ### Manual installation
 
 1. Download the repository as a ZIP file.
@@ -41,15 +87,9 @@ Other Philips air purifier models may work with `py-air-control`, but they have 
 /config/custom_components/
 ```
 
-For example, on a typical Home Assistant installation:
-
-```text
-homeassistant/config/custom_components/
-```
-
 7. Paste the `philips_ac2889_http` folder into the `custom_components` directory.
 
-The final directory structure should look like this:
+The final directory structure should look like:
 
 ```text
 config/
@@ -71,7 +111,8 @@ config/
 
 **Philips AC2889 HTTP**
 
-11. Follow the configuration steps and enter the IP address of your Philips AC2889/10.
+11. Follow the configuration steps.
+
 
 ## Requirements
 
