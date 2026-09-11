@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "documentation": "https://github.com/rgerganov/py-air-control",
   "issue_tracker": "https://github.com/rgerganov/py-air-control/issues",
-  "codeowners": [JKamyk13],
+  "codeowners": ["@JKamyk13"],
   "config_flow": true,
   "iot_class": "local_polling",
   "requirements": ["py-air-control==2.3.0"]
