@@ -18,7 +18,11 @@ class PhilipsAC2889Fan(PhilipsEntity, FanEntity):
     """Philips AC2889 fan."""
 
     _attr_name = "Oczyszczacz"
-    _attr_supported_features = FanEntityFeature.SET_SPEED
+    _attr_supported_features = (
+        FanEntityFeature.TURN_ON
+        | FanEntityFeature.TURN_OFF
+        | FanEntityFeature.SET_SPEED
+    )
     _attr_percentage_step = 25
 
     def __init__(self, coordinator):
