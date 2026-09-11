@@ -14,13 +14,9 @@ SPEED_NAMES = {
 	"a": "Auto",
 }
 
-MODES = ("M", "A")
+MODES = ("P", "A", "B")
 MODE_NAMES = {
-	"M": "Manual",
-	"A": "Allergen",
-}
-
-FUNCTIONS = ("P",)
-FUNCTION_NAMES = {
-	"P": "Purification",
+	"P": "Tryb ogólny",
+	"A": "Tryb antyalerg",
+	"B": "Tryb usuw. bakt. i wir.",
 }
