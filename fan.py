@@ -47,7 +47,7 @@ class PhilipsAC2889Fan(PhilipsEntity, FanEntity):
     def preset_modes(self):
         return list(FAN_SPEEDS)
 
-    async def async_turn_on(self, **kwargs):
+    async def async_turn_on(self, *args, **kwargs):
         await self.coordinator.async_set_values({"pwr": "1"})
 
     async def async_turn_off(self, **kwargs):
