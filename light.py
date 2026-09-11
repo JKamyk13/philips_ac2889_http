@@ -44,11 +44,20 @@ class PhilipsAC2889Light(PhilipsEntity, LightEntity):
             brightness_percent = self._brightness_percent or 100
         else:
             brightness_percent = round(max(0, min(255, brightness)) * 100 / 255)
-        await self.coordinator.async_set_values({"aqil": brightness_percent})
+        await self.coordinator.async_set_values({
+            "aqil": brightness_percent,
+            "uil": "1",
+        })
 
     async def async_turn_off(self, *args, **kwargs):
-        await self.coordinator.async_set_values({"aqil": 0})
+        await self.coordinator.async_set_values({
+            "aqil": 0,
+            "uil": "0",
+        })
 
     async def async_set_brightness(self, brightness):
         brightness_percent = round(max(0, min(255, brightness)) * 100 / 255)
-        await self.coordinator.async_set_values({"aqil": brightness_percent})
+        await self.coordinator.async_set_values({
+            "aqil": brightness_percent,
+            "uil": "1" if brightness_percent > 0 else "0",
+        })
