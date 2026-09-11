@@ -10,10 +10,10 @@ from .entity import PhilipsEntity
 
 SENSORS = {
     "pm25": ("PM2.5", "mdi:blur", SensorDeviceClass.PM25, CONCENTRATION_MICROGRAMS_PER_CUBIC_METER),
-    "temp": ("Temperatura", "mdi:thermometer", SensorDeviceClass.TEMPERATURE, UnitOfTemperature.CELSIUS),
-    "rh": ("Wilgotność", "mdi:water-percent", SensorDeviceClass.HUMIDITY, PERCENTAGE),
-    "iaql": ("Indeks alergenów", "mdi:allergy", None, None),
-    "wl": ("Poziom wody", "mdi:water", None, PERCENTAGE),
+    "temp": ("Temperature", "mdi:thermometer", SensorDeviceClass.TEMPERATURE, UnitOfTemperature.CELSIUS),
+    "rh": ("Humidity", "mdi:water-percent", SensorDeviceClass.HUMIDITY, PERCENTAGE),
+    "iaql": ("Allergen Index", "mdi:allergy", None, None),
+    "wl": ("Water Level", "mdi:water", None, PERCENTAGE),
 }
 
 async def async_setup_entry(hass, entry, async_add_entities):

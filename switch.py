@@ -12,7 +12,7 @@ async def async_setup_entry(hass, entry, async_add_entities):
 
 
 class PhilipsChildLockSwitch(PhilipsEntity, SwitchEntity):
-    _attr_name = "Blokada rodzicielska"
+    _attr_name = "Child Lock"
 
     def __init__(self, coordinator):
         super().__init__(coordinator, "child_lock")

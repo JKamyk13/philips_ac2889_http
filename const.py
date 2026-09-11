@@ -16,7 +16,7 @@ SPEED_NAMES = {
 
 MODES = ("P", "A", "B")
 MODE_NAMES = {
-	"P": "Tryb ogólny",
-	"A": "Tryb antyalerg",
-	"B": "Tryb usuw. bakt. i wir.",
+	"P": "General mode",
+	"A": "Allergen mode",
+	"B": "Bacteria and virus removal mode",
 }

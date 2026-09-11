@@ -15,7 +15,7 @@ async def async_setup_entry(hass, entry, async_add_entities):
 class PhilipsAC2889Light(PhilipsEntity, LightEntity):
     """Control the purifier display brightness."""
 
-    _attr_name = "Oświetlenie"
+    _attr_name = "Display Light"
     _attr_supported_color_modes = {ColorMode.BRIGHTNESS}
     _attr_color_mode = ColorMode.BRIGHTNESS
 

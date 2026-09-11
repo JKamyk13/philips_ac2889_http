@@ -17,7 +17,7 @@ async def async_setup_entry(hass, entry, async_add_entities):
 class PhilipsAC2889Fan(PhilipsEntity, FanEntity):
     """Philips AC2889 fan."""
 
-    _attr_name = "Oczyszczacz"
+    _attr_name = "Air Purifier"
     _attr_supported_features = (
         FanEntityFeature.TURN_ON
         | FanEntityFeature.TURN_OFF

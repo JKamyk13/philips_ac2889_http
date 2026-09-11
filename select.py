@@ -13,7 +13,7 @@ async def async_setup_entry(hass, entry, async_add_entities):
 
 
 class PhilipsModeSelect(PhilipsEntity, SelectEntity):
-    _attr_name = "Tryb"
+    _attr_name = "Mode"
     _attr_options = [MODE_NAMES[mode] for mode in MODES]
 
     def __init__(self, coordinator):
