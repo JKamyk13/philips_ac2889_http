@@ -81,12 +81,12 @@ Paste the folder into:
 
 The final structure should be:
 
-config/
-└── custom_components/
-    └── philips_ac2889_http/
-        ├── __init__.py
-        ├── manifest.json
-        ├── config_flow.py
+config/ 
+└── custom_components/ 
+     └── philips_ac2889_http/ 
+        ├── __init__.py 
+        ├── manifest.json 
+        ├── config_flow.py 
         └── ...
 
 Restart Home Assistant.
