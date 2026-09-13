@@ -70,7 +70,6 @@ Search for:
 Select the integration and follow the configuration steps.
 
 ### Manual installation
-Manual installation
 Download the repository as a ZIP file and extract it.
 Open the extracted repository and copy:
 
@@ -82,13 +81,13 @@ Paste the folder into:
 
 The final structure should be:
 
-/config/
+config/
 └── custom_components/
-└── philips_ac2889_http/
-├── init.py
-├── manifest.json
-├── config_flow.py
-└── ...
+    └── philips_ac2889_http/
+        ├── __init__.py
+        ├── manifest.json
+        ├── config_flow.py
+        └── ...
 
 Restart Home Assistant.
 Go to Settings → Devices & services → Add Integration.
