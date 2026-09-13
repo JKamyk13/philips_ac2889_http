@@ -70,48 +70,29 @@ Search for:
 Select the integration and follow the configuration steps.
 
 ### Manual installation
+Manual installation
+Download the repository as a ZIP file and extract it.
+Open the extracted repository and copy:
 
-1. Download the repository as a ZIP file.
+custom_components/philips_ac2889_http/
 
-2. Extract the downloaded ZIP file.
+Paste the folder into:
 
-3. Open the extracted repository folder.
-
-4. Inside it, you will find the `philips_ac2889_http` folder.
-
-5. Copy the **`philips_ac2889_http`** folder.
-
-6. Open your Home Assistant configuration directory:
-
-```text
 /config/custom_components/
-```
 
-7. Paste the `philips_ac2889_http` folder into the `custom_components` directory.
+The final structure should be:
 
-The final directory structure should look like:
-
-```text
-config/
+/config/
 └── custom_components/
-    └── philips_ac2889_http/
-        ├── __init__.py
-        ├── manifest.json
-        ├── config_flow.py
-        └── ...
-```
+└── philips_ac2889_http/
+├── init.py
+├── manifest.json
+├── config_flow.py
+└── ...
 
-8. Restart Home Assistant.
-
-9. Go to:
-
-**Settings → Devices & services → Add Integration**
-
-10. Search for:
-
-**Philips AC2889 HTTP**
-
-11. Follow the configuration steps.
+Restart Home Assistant.
+Go to Settings → Devices & services → Add Integration.
+Search for Philips AC2889 HTTP and follow the configuration steps.
 
 
 ## Requirements
